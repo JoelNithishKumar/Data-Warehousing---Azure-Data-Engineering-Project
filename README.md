@@ -6,9 +6,9 @@ Azure data engineering project - Yellow Cab
 # Project Overview
 This Azure project involves the extraction, transformation, and loading (ETL) of data from an API source into Azure Data Lake Storage (ADLS) using Azure Data Factory (ADF). The data is processed through different layers known as Bronze, Silver, and Gold, each serving a specific purpose in data management and analytics. Finally, the processed data is loaded into Azure Synapse Analytics for further analysis and visualization using Power BI.
 
-# Project Architecture
+**Project Architecture**
 
-# Data Source
+**Data Source**
 
 Yellow Taxi Trip Data 2017: A publicly available dataset from Kaggle, containing information about taxi trips taken in New York City during 2017, including details such as pickup and dropoff, trip distances, fares, timestamps, and other relevant attributes.
 Data Loading with Azure Data Factory (ADF)
@@ -17,29 +17,30 @@ Extraction: ADF extracts data from the API source using built-in connectors or c
 Loading: ADF pipelines facilitate loading the extracted data into Azure Data Lake Storage (ADLS) Gen2.
 Orchestration: ADF orchestrates the entire data loading process, from extraction to loading, ensuring efficient and reliable data ingestion.
 
-# Azure Data Lake Storage (ADLS) Gen2
+**Azure Data Lake Storage (ADLS) Gen2**
 Central Storage Repository: ADLS Gen2 is the central storage repository for all ingested data.
 
-# Organizational Layers:
+**Organizational Layers:**
 
 Bronze Layer: Raw data stored in its original form for traceability and lineage.
 Silver Layer: Data undergoes cleansing, deduplication, and transformation, creating structured tables optimized for analytics.
 Gold Layer: Final version of the data, optimized for analytics and reporting, including copies of fact and dimension tables from the Silver layer.
 Audit Layer: A copy of the data from the Gold layer, ensuring data integrity and providing a backup for compliance.
 
-# Transformations with Azure Databricks (PySpark)
+**Transformations with Azure Databricks (PySpark)**
 
 Transformations: Performed in the Bronze, Silver, and Gold layers using PySpark for data processing, including deduplication, cleaning, and enrichment.
 
-# Data Loading into Azure Synapse Analytics
+**Data Loading into Azure Synapse Analytics**
 
 Azure Synapse Analytics: A cloud-based analytics service for data warehousing and big data analytics, integrating SQL analytics and Spark analytics.
 Loading Process: Processed data from the Gold layer is loaded into Azure Synapse Analytics for further analysis and reporting.
 
-# Data Visualization with Power BI
+**Data Visualization with Power BI**
 
 Power BI: A business analytics tool used to create interactive dashboards and reports from data loaded into Azure Synapse Analytics, providing powerful visualization capabilities for insights and data-driven decisions.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Implementation Details
