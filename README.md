@@ -18,6 +18,7 @@ Loading: ADF pipelines facilitate loading the extracted data into Azure Data Lak
 Orchestration: ADF orchestrates the entire data loading process, from extraction to loading, ensuring efficient and reliable data ingestion.
 
 **Azure Data Lake Storage (ADLS) Gen2**
+
 Central Storage Repository: ADLS Gen2 is the central storage repository for all ingested data.
 
 **Organizational Layers:**
